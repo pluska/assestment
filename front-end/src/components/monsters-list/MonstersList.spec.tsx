@@ -2,7 +2,7 @@ import { act, render, screen } from '@testing-library/react'
 import { Provider } from 'react-redux'
 import { store } from '../../app/store'
 import { MonstersList } from './MonstersList'
-import monstersData from '../../../data/monsters.json'
+import monstersData from '../../../../data/monsters.json'
 
 const monstersListFactory = (data = monstersData.monsters) => {
     render(
