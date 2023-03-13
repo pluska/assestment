@@ -1,6 +1,6 @@
 import { fetchMonstersData, setSelectedMonster } from './monsters.actions';
 import { monstersReducer } from './monsters.reducer';
-import monstersData from '../../../data/monsters.json';
+import monstersData from '../../../../data/monsters.json';
 
 describe('Monsters Reducer', () => {
   it('should return the initial state', () => {
