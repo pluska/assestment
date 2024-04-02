@@ -5,11 +5,12 @@ export const up = (knex: Knex): Promise<void> =>
   knex.schema.createTable(Monster.tableName, (table: Knex.TableBuilder) => {
     table.increments();
     table.timestamps();
-    table.string('imageUrl').notNullable();
+    table.string('name').notNullable();
     table.integer('attack').notNullable();
     table.integer('defense').notNullable();
     table.integer('hp').notNullable();
     table.integer('speed').notNullable();
+    table.string('imageUrl').notNullable();
   });
 
 export const down = (knex: Knex): Promise<void> =>

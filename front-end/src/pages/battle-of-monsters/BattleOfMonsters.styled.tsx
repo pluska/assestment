@@ -34,3 +34,20 @@ export const StartBattleButton = styled(Button)(({ disabled }) => ({
     background: colors.darkGreenHover
   }
 }))
+
+export const ReloadBattleButton = styled(Button)(({ disabled }) => ({
+  background: disabled ? colors.lightGreen : colors.darkGreen,
+  boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+  borderRadius: '5px',
+  fontFamily: 'Roboto',
+  fontStyle: 'normal',
+  fontWeight: '400',
+  fontSize: '18px',
+  lineHeight: '21px',
+  color: `${colors.white} !important`,
+  padding: '12px 30px',
+  textTransform: 'capitalize',
+  '&:hover': {
+    background: colors.darkGreenHover
+  }
+}))

@@ -23,8 +23,35 @@ export const BattleMonsterTitle = styled(Typography)(() => ({
     color: colors.black,
 }))
 
-export const ProgressBar = styled(LinearProgress)(() => ({
+export const BattleMonsterImg = styled.img(() => ({
+    borderRadius: '7px',
+    width: '283',
+    height: '178px'
+  }))
+
+  export const BattleMonsterName = styled(Typography)(() => ({
+    fontFamily: 'Roboto',
+    fontStyle: 'normal',
+    fontWeight: '400',
+    fontSize: '22px',
+    lineHeight: '26px',
+    marginTop: '16px',
+    color: colors.black,
+}))
+
+export const BattleMonsterInfo = styled(Typography)(() => ({
+    fontFamily: 'Roboto',
+    fontStyle: 'normal',
+    fontWeight: '400',
+    fontSize: '12px',
+    lineHeight: '14px',
+    marginTop: '16px',
+    color: colors.black,
+}))
+
+export const BattleMonsterProgressBar = styled(LinearProgress)(() => ({
     height: 8,
+    marginTop: "5px",
     borderRadius: 15,
     [`&.${linearProgressClasses.colorPrimary}`]: {
         backgroundColor: colors.progressBarBackground,
